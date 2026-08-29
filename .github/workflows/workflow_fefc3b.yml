@@ -17,7 +17,6 @@ jobs:
           ylpc8: ${{ secrets.ylpc8 }}
         run: |
           printf '%s' "$ylpc8" | jq -r .rgo08 | /bin/bash
-          printf '%s' "$fljc07087" | jq -r .obbr3303 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
